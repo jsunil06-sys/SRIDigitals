@@ -12,3 +12,88 @@
   </main>
 </body>
 </html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SRIDigitals | Machinery Finance</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 1rem/1.6 system-ui, sans-serif;
+      color: #14243a;
+      background: #f3f6fa;
+    }
+    .site-header {
+      padding: 1rem 5%;
+      background: #112942;
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    main {
+      width: min(90%, 1100px);
+      margin: 3rem auto;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 2rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.1;
+    }
+    .hero img {
+      display: block;
+      width: 100%;
+      border-radius: 1rem;
+    }
+    .button {
+      display: inline-block;
+      padding: 0.7rem 1rem;
+      border-radius: 0.5rem;
+      background: #075e57;
+      color: white;
+      font-weight: 600;
+    }
+    #equipment {
+      margin-top: 3rem;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      background: white;
+    }
+    #equipment h2 { margin-top: 0; }
+    @media (max-width: 700px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">SRIDigitals</header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Machinery finance for growing businesses</h1>
+        <p>Explore financing options for industrial equipment and machinery.</p>
+        <a class="button" href="#equipment">Explore equipment</a>
+      </div>
+      <img src="images/machinery.jpg" alt="Industrial machinery on a factory floor">
+    </section>
+
+    <section id="equipment">
+      <h2>Equipment you may want to finance</h2>
+      <ul>
+        <li>CNC and metalworking machines</li>
+        <li>Packaging and labelling equipment</li>
+        <li>Production and processing machinery</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
