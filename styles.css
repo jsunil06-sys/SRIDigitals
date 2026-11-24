@@ -48,6 +48,16 @@ a:focus-visible, summary:focus-visible {
   text-decoration: none;
 }
 .brand span { font-weight: 550; }
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 3.75rem;
+  max-width: 10rem;
+  object-fit: contain;
+  object-position: left center;
+  border-radius: .25rem;
+}
+.footer-inner .brand-logo { height: 3rem; }
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -281,6 +291,21 @@ details p { margin: .6rem 0 .15rem; }
   gap: 1.25rem;
   padding-block: 2.85rem;
 }
+.contact-person {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 42rem;
+}
+.contact-person img {
+  width: 6.5rem;
+  height: 6.5rem;
+  flex: 0 0 6.5rem;
+  border: 3px solid var(--gold);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+}
 .contact p { color: #d4e0ee; }
 address { font-style: normal; }
 
@@ -308,6 +333,13 @@ footer p { color: var(--muted); }
 
 @media (max-width: 31rem) {
   .wrap { width: calc(100% - 2rem); }
+  .brand-logo { height: 3.25rem; }
+  .contact-person { align-items: flex-start; }
+  .contact-person img {
+    width: 5rem;
+    height: 5rem;
+    flex-basis: 5rem;
+  }
   .header-inner, .footer-inner {
     align-items: flex-start;
     flex-direction: column;
